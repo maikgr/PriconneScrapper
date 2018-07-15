@@ -1,366 +1,366 @@
 [
     {
-       "id":100,
-       "name":"ハツネ",
-       "alias":"hatsune",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/a53f24b7d25d084737f66f604b39de56-2.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621122"
+        "char_id": "1621122",
+        "name": "ハツネ",
+        "alias": "Hatsune",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/a53f24b7d25d084737f66f604b39de56-2.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621122"
     },
     {
-       "id":101,
-       "name":"マコト",
-       "alias":"makoto",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/edfa69471c64e3bd2541abcc7c9243f5-2.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621257"
+        "char_id": "1621257",
+        "name": "マコト",
+        "alias": "Makoto",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/edfa69471c64e3bd2541abcc7c9243f5-2.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621257"
     },
     {
-       "id":102,
-       "name":"ジータ",
-       "alias":"jiita",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/52bf57378b062f33726e648dd7db1ddc.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621266"
+        "char_id": "1621266",
+        "name": "ジータ",
+        "alias": "Djeeta",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/52bf57378b062f33726e648dd7db1ddc.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621266"
     },
     {
-       "id":103,
-       "name":"サレン",
-       "alias":"saren",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/48f070b8d5b039675f0332a78f67fc5a-1.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621128"
+        "char_id": "1621128",
+        "name": "サレン",
+        "alias": "Saren",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/48f070b8d5b039675f0332a78f67fc5a-1.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621128"
     },
     {
-       "id":104,
-       "name":"ノゾミ",
-       "alias":"nozomi",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/9239dc9f2f5980081e1adac4885bd8df.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621131"
+        "char_id": "1621131",
+        "name": "ノゾミ",
+        "alias": "Nozomi",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/9239dc9f2f5980081e1adac4885bd8df.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621131"
     },
     {
-       "id":105,
-       "name":"リノ",
-       "alias":"rino",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/a39523ed5e36603253b22b81df05b015-2.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621119"
+        "char_id": "1621119",
+        "name": "リノ",
+        "alias": "Rino",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/a39523ed5e36603253b22b81df05b015-2.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621119"
     },
     {
-       "id":106,
-       "name":"ニノン",
-       "alias":"ninon",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/67cceadf26aa48e39e3d565ea5bb5ac2-1.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621251"
+        "char_id": "1621251",
+        "name": "ニノン",
+        "alias": "Ninon",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/67cceadf26aa48e39e3d565ea5bb5ac2-1.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621251"
     },
     {
-       "id":107,
-       "name":"イオ",
-       "alias":"io",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/7733a998595959b7c3a7879154d24f53-2.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621125"
+        "char_id": "1621125",
+        "name": "イオ",
+        "alias": "Io",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/7733a998595959b7c3a7879154d24f53-2.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621125"
     },
     {
-       "id":108,
-       "name":"アキノ",
-       "alias":"akino",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/b4d5e64dba022bb5992e0a50f791945f-2.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621254"
+        "char_id": "1621254",
+        "name": "アキノ",
+        "alias": "Akino",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/b4d5e64dba022bb5992e0a50f791945f-2.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621254"
     },
     {
-       "id":109,
-       "name":"モニカ",
-       "alias":"monika",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/d9e1de14fd29bb2746c1e83ff07e64a8-2.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621263"
+        "char_id": "1621263",
+        "name": "モニカ",
+        "alias": "Monika",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/d9e1de14fd29bb2746c1e83ff07e64a8-2.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621263"
     },
     {
-       "id":110,
-       "name":"シズル",
-       "alias":"shizuru",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/983fad18051ce564ccb33c971bd98a7a.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621260"
+        "char_id": "1621260",
+        "name": "シズル",
+        "alias": "Shizuru",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/983fad18051ce564ccb33c971bd98a7a.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621260"
     },
     {
-       "id":111,
-       "name":"アンナ",
-       "alias":"anna",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/297d694a48a3d56060b6265721121121-1.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1620999"
+        "char_id": "1620999",
+        "name": "アンナ",
+        "alias": "Anna",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/297d694a48a3d56060b6265721121121-1.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1620999"
     },
     {
-       "id":112,
-       "name":"ジュン",
-       "alias":"jun",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/c99ad59780cf8f655d8d25c29c020ae8.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1677528"
+        "char_id": "1677528",
+        "name": "ジュン",
+        "alias": "Jun",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/c99ad59780cf8f655d8d25c29c020ae8.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1677528"
     },
     {
-       "id":113,
-       "name":"マホ",
-       "alias":"maho",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/cb97e62e8095d052b27c6bf33c082008-2.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621116"
+        "char_id": "1621116",
+        "name": "マホ",
+        "alias": "Maho",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/cb97e62e8095d052b27c6bf33c082008-2.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621116"
     },
     {
-       "id":114,
-       "name":"アリサ",
-       "alias":"arisa",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/f71a331f72bd7f3174358c0aa9c893bf.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1763466"
+        "char_id": "1763466",
+        "name": "アリサ",
+        "alias": "Arisa",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/f71a331f72bd7f3174358c0aa9c893bf.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1763466"
     },
     {
-       "id":115,
-       "name":"キョウカ",
-       "alias":"kyouka",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/04/8f84bee23a55e20a3c6ea7c52a023e56.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1863324"
+        "char_id": "1863324",
+        "name": "キョウカ",
+        "alias": "Kyouka",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/04/8f84bee23a55e20a3c6ea7c52a023e56.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1863324"
     },
     {
-       "id":116,
-       "name":"イリヤ",
-       "alias":"iriya",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/04/download_file-24.png",
-       "details":"https://appmedia.jp/priconne-redive/1863699"
+        "char_id": "1863699",
+        "name": "イリヤ",
+        "alias": "Ilya",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/04/download_file-24.png",
+        "details": "https://appmedia.jp/priconne-redive/1863699"
     },
     {
-       "id":117,
-       "name":"水着ペコリーヌ",
-       "alias":"水着pekoriinu",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/04/f4c6ed4606d34468ad280c07eec4ab89.jpg",
-       "details":"https://appmedia.jp/priconne-redive/2147551"
+        "char_id": "2147551",
+        "name": "水着ペコリーヌ",
+        "alias": "Swimwear Pecorine",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/04/f4c6ed4606d34468ad280c07eec4ab89.jpg",
+        "details": "https://appmedia.jp/priconne-redive/2147551"
     },
     {
-       "id":120,
-       "name":"クウカ",
-       "alias":"kuuka",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/5ac8de17983b8fe5ef9f739d5b4fea31.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621509"
+        "char_id": "1621509",
+        "name": "クウカ",
+        "alias": "Kuuka",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/5ac8de17983b8fe5ef9f739d5b4fea31.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621509"
     },
     {
-       "id":121,
-       "name":"ミフユ",
-       "alias":"mifuyu",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/dfd30e215a7fad6e59a4ae9928dbfa9a.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621554"
+        "char_id": "1621554",
+        "name": "ミフユ",
+        "alias": "Mifuyu",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/dfd30e215a7fad6e59a4ae9928dbfa9a.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621554"
     },
     {
-       "id":122,
-       "name":"ユキ",
-       "alias":"yuki",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/23b2f339f6f4c58563f5034a33e4b188.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621377"
+        "char_id": "1621377",
+        "name": "ユキ",
+        "alias": "Yuki",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/23b2f339f6f4c58563f5034a33e4b188.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621377"
     },
     {
-       "id":123,
-       "name":"アカリ",
-       "alias":"akari",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/a22586992acef36878c6420c8e7c72e7.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621272"
+        "char_id": "1621272",
+        "name": "アカリ",
+        "alias": "Akari",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/a22586992acef36878c6420c8e7c72e7.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621272"
     },
     {
-       "id":124,
-       "name":"タマキ",
-       "alias":"tamaki",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/d5b90445275a3172978f3075dd16b036.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621512"
+        "char_id": "1621512",
+        "name": "タマキ",
+        "alias": "Tamaki",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/d5b90445275a3172978f3075dd16b036.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621512"
     },
     {
-       "id":125,
-       "name":"ミミ",
-       "alias":"mimi",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/7c45dab9185df58f6add2aecb57887a2.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621386"
+        "char_id": "1621386",
+        "name": "ミミ",
+        "alias": "Mimi",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/7c45dab9185df58f6add2aecb57887a2.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621386"
     },
     {
-       "id":126,
-       "name":"マヒル",
-       "alias":"mahiru",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/1d690ec0af5cbabff1dd1fa42abb7ecf.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621395"
+        "char_id": "1621395",
+        "name": "マヒル",
+        "alias": "Mahiru",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/1d690ec0af5cbabff1dd1fa42abb7ecf.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621395"
     },
     {
-       "id":127,
-       "name":"シノブ",
-       "alias":"shinobu",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/f491e8093ac9e5bc6f435d70061e9dc9.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621392"
+        "char_id": "1621392",
+        "name": "シノブ",
+        "alias": "Shinobu",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/f491e8093ac9e5bc6f435d70061e9dc9.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621392"
     },
     {
-       "id":128,
-       "name":"カオリ",
-       "alias":"kaori",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/f1d923ac20ef7343de2eb63e5b91d38b.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621383"
+        "char_id": "1621383",
+        "name": "カオリ",
+        "alias": "Kaori",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/f1d923ac20ef7343de2eb63e5b91d38b.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621383"
     },
     {
-       "id":129,
-       "name":"チカ",
-       "alias":"chika",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/2c6008668f955614179e5e9ebda759d8.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621506"
+        "char_id": "1621506",
+        "name": "チカ",
+        "alias": "Chika",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/2c6008668f955614179e5e9ebda759d8.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621506"
     },
     {
-       "id":130,
-       "name":"ミツキ",
-       "alias":"mitsuki",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/39d1eeed543090e2a9bc35548da1fce5.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621557"
+        "char_id": "1621557",
+        "name": "ミツキ",
+        "alias": "Mitsuki",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/39d1eeed543090e2a9bc35548da1fce5.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621557"
     },
     {
-       "id":131,
-       "name":"エリコ",
-       "alias":"eriko",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/e7f2617aa65b969c165623dae1438503.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621389"
+        "char_id": "1621389",
+        "name": "エリコ",
+        "alias": "Eriko",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/e7f2617aa65b969c165623dae1438503.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621389"
     },
     {
-       "id":132,
-       "name":"ミヤコ",
-       "alias":"miyako",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/f92939cb0bb047778a6a49b5a44f3eb4-1.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621374"
+        "char_id": "1621374",
+        "name": "ミヤコ",
+        "alias": "Miyako",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/f92939cb0bb047778a6a49b5a44f3eb4-1.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621374"
     },
     {
-       "id":133,
-       "name":"シオリ",
-       "alias":"shiori",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/e02126c514da8d5106020e594e5ed048.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621503"
+        "char_id": "1621503",
+        "name": "シオリ",
+        "alias": "Shiori",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/e02126c514da8d5106020e594e5ed048.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621503"
     },
     {
-       "id":134,
-       "name":"スズナ",
-       "alias":"suzuna",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/a3893ba52178dade0c002ea6732d7941.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621380"
+        "char_id": "1621380",
+        "name": "スズナ",
+        "alias": "Suzuna",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/a3893ba52178dade0c002ea6732d7941.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621380"
     },
     {
-       "id":135,
-       "name":"リン",
-       "alias":"rin",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/gateway-23.png",
-       "details":"https://appmedia.jp/priconne-redive/1731201"
+        "char_id": "1731201",
+        "name": "リン",
+        "alias": "Rin",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/gateway-23.png",
+        "details": "https://appmedia.jp/priconne-redive/1731201"
     },
     {
-       "id":136,
-       "name":"アヤネ",
-       "alias":"ayane",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/35d38f0f2c4096a3732fc8c097a9d2f8.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1850172"
+        "char_id": "1850172",
+        "name": "アヤネ",
+        "alias": "Ayane",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/35d38f0f2c4096a3732fc8c097a9d2f8.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1850172"
     },
     {
-       "id":137,
-       "name":"ミサト",
-       "alias":"misato",
-       "image":"/wp-content/uploads/2018/05/ef20a9f8fb297ae89bf266df3458c49a.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1863498"
+        "char_id": "1863498",
+        "name": "ミサト",
+        "alias": "Misato",
+        "image": "/wp-content/uploads/2018/05/ef20a9f8fb297ae89bf266df3458c49a.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1863498"
     },
     {
-       "id":138,
-       "name":"ツムギ",
-       "alias":"tsumugi",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/c6ed6f4b23bee9bc59e0b03581b48882.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1863675"
+        "char_id": "1863675",
+        "name": "ツムギ",
+        "alias": "Tsumugi",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/c6ed6f4b23bee9bc59e0b03581b48882.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1863675"
     },
     {
-       "id":140,
-       "name":"レイ",
-       "alias":"rei",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/be8054265c30487a9b2b22fb89771a6e.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621563"
+        "char_id": "1621563",
+        "name": "レイ",
+        "alias": "Rei",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/be8054265c30487a9b2b22fb89771a6e.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621563"
     },
     {
-       "id":141,
-       "name":"ユカリ",
-       "alias":"yukari",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/bd97189b17aa53a7afd8137b1f43282b.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621653"
+        "char_id": "1621653",
+        "name": "ユカリ",
+        "alias": "Yukari",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/bd97189b17aa53a7afd8137b1f43282b.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621653"
     },
     {
-       "id":142,
-       "name":"アオイ",
-       "alias":"aoi",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/30cdeadb47ccfe2c0fea835cb76c19c6.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621656"
+        "char_id": "1621656",
+        "name": "アオイ",
+        "alias": "Aoi",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/30cdeadb47ccfe2c0fea835cb76c19c6.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621656"
     },
     {
-       "id":143,
-       "name":"ヨリ",
-       "alias":"yori",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/cc2c1f715c8b56653f454b08afa660d5.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621572"
+        "char_id": "1621572",
+        "name": "ヨリ",
+        "alias": "Yori",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/cc2c1f715c8b56653f454b08afa660d5.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621572"
     },
     {
-       "id":144,
-       "name":"コッコロ",
-       "alias":"kokkoro",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/7d44be032d8cf590dbb5a62202a0c6cc-1.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621773"
+        "char_id": "1621773",
+        "name": "コッコロ",
+        "alias": "Kokkoro",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/7d44be032d8cf590dbb5a62202a0c6cc-1.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621773"
     },
     {
-       "id":145,
-       "name":"ミソギ",
-       "alias":"misogi",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/05c5558656b672e35229a9e861e0d9d4.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621566"
+        "char_id": "1621566",
+        "name": "ミソギ",
+        "alias": "Misogi",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/05c5558656b672e35229a9e861e0d9d4.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621566"
     },
     {
-       "id":146,
-       "name":"リマ",
-       "alias":"rima",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/c714077a42f0dde88bff75ab37d0a46d.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621662"
+        "char_id": "1621662",
+        "name": "リマ",
+        "alias": "Rima",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/c714077a42f0dde88bff75ab37d0a46d.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621662"
     },
     {
-       "id":147,
-       "name":"キャル",
-       "alias":"kyaru",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/5f8128f83762501f26fdeae774e995b8-1.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621776"
+        "char_id": "1621776",
+        "name": "キャル",
+        "alias": "Kyaru",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/5f8128f83762501f26fdeae774e995b8-1.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621776"
     },
     {
-       "id":148,
-       "name":"スズメ",
-       "alias":"suzume",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/b07f9e881a896a11585e8e8b8007d2da.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621650"
+        "char_id": "1621650",
+        "name": "スズメ",
+        "alias": "Suzume",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/b07f9e881a896a11585e8e8b8007d2da.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621650"
     },
     {
-       "id":149,
-       "name":"ユイ",
-       "alias":"yui",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/54ca16643e593969b2f7abe2ddb4cee8.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621665"
+        "char_id": "1621665",
+        "name": "ユイ",
+        "alias": "Yui",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/54ca16643e593969b2f7abe2ddb4cee8.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621665"
     },
     {
-       "id":150,
-       "name":"ミサキ",
-       "alias":"misaki",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/b3f64c0add8424c7035764baab0e37fb.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621659"
+        "char_id": "1621659",
+        "name": "ミサキ",
+        "alias": "Misaki",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/b3f64c0add8424c7035764baab0e37fb.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621659"
     },
     {
-       "id":151,
-       "name":"ヒヨリ",
-       "alias":"hiyori",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/31574d9b2e7bab1173420763e1ff26a1.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621560"
+        "char_id": "1621560",
+        "name": "ヒヨリ",
+        "alias": "Hiyori",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/31574d9b2e7bab1173420763e1ff26a1.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621560"
     },
     {
-       "id":152,
-       "name":"ペコリーヌ",
-       "alias":"pekoriinu",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/b999c9a2b7e403a7273ebf772f0ddda6.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621668"
+        "char_id": "1621668",
+        "name": "ペコリーヌ",
+        "alias": "Pecorine",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/b999c9a2b7e403a7273ebf772f0ddda6.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621668"
     },
     {
-       "id":153,
-       "name":"クルミ",
-       "alias":"kurumi",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/02/796c68cf02600bf69be1122ff616479b.jpg",
-       "details":"https://appmedia.jp/priconne-redive/1621569"
+        "char_id": "1621569",
+        "name": "クルミ",
+        "alias": "Kurumi",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/02/796c68cf02600bf69be1122ff616479b.jpg",
+        "details": "https://appmedia.jp/priconne-redive/1621569"
     },
     {
-       "id":154,
-       "name":"水着コッコロ ",
-       "alias":"水着kokkoro ",
-       "image":"https://appmedia.jp/wp-content/uploads/2018/04/c339f3b8ed00282f58f6e4ab915c5ec5.jpg",
-       "details":"https://appmedia.jp/priconne-redive/2147596"
+        "char_id": "2147596",
+        "name": "水着コッコロ ",
+        "alias": "Swimwear Kokkoro ",
+        "image": "https://appmedia.jp/wp-content/uploads/2018/04/c339f3b8ed00282f58f6e4ab915c5ec5.jpg",
+        "details": "https://appmedia.jp/priconne-redive/2147596"
     }
- ]
+]
