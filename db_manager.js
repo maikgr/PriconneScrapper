@@ -46,6 +46,6 @@ function getChar(query) {
     return Character.find({alias: new RegExp(query, 'i')}).exec();
 }
 
-function getAllChar(query) {
+function getAllChar() {
     return Character.find().exec();
 }
