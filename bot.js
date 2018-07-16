@@ -18,8 +18,7 @@ client.on('ready', () => {
 });
 
 client.on('message', (msg) => {
-    if (msg.channel.id !== process.env.BOT_SPAM_CHANNEL
-        || !msg.content.startsWith(prefix)
+    if (!msg.content.startsWith(prefix)
         || msg.author.bot) return;
 
     const args = msg.content.slice(prefix.length).split(/ +/);
