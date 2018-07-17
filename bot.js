@@ -32,7 +32,7 @@ client.on('message', (msg) => {
         let reply = "Incorrect command usage.";
 
         if (command.usage) {
-            reply += `\n Command syntax: \`${prefix}${commandName} ${command.usage}\``;
+            reply += `\nCommand syntax: \`${prefix}${commandName} ${command.usage}\``;
         }
 
         return msg.reply(reply);
