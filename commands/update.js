@@ -1,6 +1,6 @@
 const db = require('../db_manager');
 const request = require('request-promise-native');
-const appmedia = require('./appmedia_parser');
+const appmedia = require('../appmedia_parser');
 
 const mainPageUrl = "https://appmedia.jp/priconne-redive/1058526";
 module.exports = {
