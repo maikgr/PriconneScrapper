@@ -46,7 +46,7 @@ client.on('message', (msg) => {
     const now = Date.now();
     const timestamps = cooldowns.get(command.name);
     const cooldownAmount = (command.cooldown || 3) * 1000;
-    const cooldownKey = command.globalCooldown ? "global" : message.author.id;
+    const cooldownKey = command.globalCooldown ? "global" : msg.author.id;
     
     if (!timestamps.has(cooldownKey)) {
         timestamps.set(cooldownKey, now);
@@ -57,7 +57,7 @@ client.on('message', (msg) => {
 
         if (now < expirationTime) {
             const timeLeft = (expirationTime - now) / 1000;
-            return message.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`);
+            return msg.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`);
         }
 
         timestamps.set(cooldownKey, now);
