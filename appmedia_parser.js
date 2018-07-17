@@ -33,7 +33,7 @@ function parseCharlistPage(html) {
             charList.push({
                 'char_id': link.replace('https://appmedia.jp/priconne-redive/', ''),
                 'name': name,
-                'alias': capitalizeFirstLetter(wanakana.toRomaji(name)),
+                'alias': [capitalizeFirstLetter(wanakana.toRomaji(name))],
                 'image': img,
                 'details': link
             });

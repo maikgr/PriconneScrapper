@@ -5,11 +5,11 @@ const db = mongoose.connection;
 let charactersSchema = new Schema({
     char_id: String,
     name: String,
-    alias: String,
+    alias: [String],
     image: String,
     overview: {},
     status: {},
-    skills: []
+    skills: [{}]
 });
 
 let Character = mongoose.model('Character', charactersSchema);
@@ -27,7 +27,7 @@ function addChar(char) {
     let newChar = new Character({
         char_id: char.char_id,
         name: char.name,
-        alias: char.alias,
+        alias: [char.alias],
         image: char.image,
         overview: char.overview,
         status: char.status,
@@ -38,12 +38,12 @@ function addChar(char) {
         if (err) {
             throw err;
         }
-        console.log("Saved " + char.alias);
+        console.log("Saved " + char.alias[0]);
     })
 }
 
 function getChar(query) {
-    return Character.find({alias: new RegExp(query, 'i')}).exec();
+    return Character.find({alias: new RegExp('^' + query, 'i')}).exec();
 }
 
 function getAllChar() {

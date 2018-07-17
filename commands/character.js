@@ -22,10 +22,13 @@ function findCharacter(message, args) {
                 if (chars.length == 0) return message.channel.send('Character not found.');
 
                 const char = chars[0];
+                const unionSkill = char.skills.find(s => s.type === 'union');
+                const passiveSkill = char.skills.find(s => s.type === 'passive');
+                const activeSkills = char.skills.filter(s => s.type === 'active');
                 return message.channel.send({
                     "embed": {
                         "url": `${appmediaUrl}/${char.char_id}`,
-                        "title": `${char.overview.rank}★ ${char.alias} (${char.name})`,
+                        "title": `${char.overview.rank}★ ${char.alias[0]} (${char.name})`,
                         "color": 16737945,
                         "description": char.overview.type,
                         "footer": {
@@ -50,20 +53,20 @@ function findCharacter(message, args) {
                                 "value": `Max HP: ${char.status.hp}\nP. Atk: ${char.status.patk}\nP. Def: ${char.status.pdef}\nM. Atk: ${char.status.matk}\nM. Def: ${char.status.mdef}`
                             },
                             {
-                                "name": `${char.skills[0].name} (Union Burst)`,
-                                "value": char.skills[0].description
+                                "name": `${unionSkill.name} (Union Burst)`,
+                                "value": unionSkill.description
                             },
                             {
-                                "name": `${char.skills[1].name} (Active)`,
-                                "value": char.skills[1].description
+                                "name": `${activeSkills[0].name} (Active)`,
+                                "value": activeSkills[0].description
                             },
                             {
-                                "name": `${char.skills[2].name} (Active)`,
-                                "value": char.skills[2].description
+                                "name": `${activeSkills[1].name} (Active)`,
+                                "value": activeSkills[1].description
                             },
                             {
-                                "name": `${char.skills[3].name} (Passive)`,
-                                "value": char.skills[3].description
+                                "name": `${passiveSkill.name} (Passive)`,
+                                "value": passiveSkill.description
                             }
                         ]
                     }
