@@ -5,8 +5,10 @@ const appmedia = require('../appmedia_parser');
 const mainPageUrl = "https://appmedia.jp/priconne-redive/1058526";
 module.exports = {
     name: 'update',
-    args: false,
     description: 'Check appmedia for new character and update database.',
+    args: false,
+    cooldown: 300,
+    globalCooldown: true,    
     execute(message, args) {
         return updateDb(message);
     }

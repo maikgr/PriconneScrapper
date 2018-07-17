@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const fs = require('fs');
 
 const client = new Discord.Client();
+const cooldowns = new Discord.Collection();
 client.commands = new Discord.Collection();
 
 const prefix = ".";
@@ -38,12 +39,37 @@ client.on('message', (msg) => {
         return msg.reply(reply);
     }
 
+    if (!cooldowns.has(command.name)) {
+        cooldowns.set(command.name, new Discord.Collection());
+    }
+    
+    const now = Date.now();
+    const timestamps = cooldowns.get(command.name);
+    const cooldownAmount = (command.cooldown || 3) * 1000;
+    const cooldownKey = command.globalCooldown ? "global" : message.author.id;
+    
+    if (!timestamps.has(cooldownKey)) {
+        timestamps.set(cooldownKey, now);
+        setTimeout(() => timestamps.delete(cooldownKey), cooldownAmount);
+    }
+    else {
+        const expirationTime = timestamps.get(cooldownKey) + cooldownAmount;
+
+        if (now < expirationTime) {
+            const timeLeft = (expirationTime - now) / 1000;
+            return message.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`);
+        }
+
+        timestamps.set(cooldownKey, now);
+        setTimeout(() => timestamps.delete(cooldownKey), cooldownAmount);
+    }
+
     try {
         command.execute(msg, args);
     } catch (error) {
         console.error(error);
         msg.reply("Error executing command!");
-    }
+    };
 });
 
 client.login(process.env.BOT_TOKEN);

@@ -3,9 +3,11 @@ const appmediaUrl = "https://appmedia.jp/priconne-redive";
 module.exports = {
     name: 'character',
     aliases: ['char', 'find', 'info'],
-    args: true,
-    usage: '<character name in alphabet>',
     description: 'Search and display character info.',
+    args: true,
+    cooldown: 3,
+    globalCooldown: false,
+    usage: '<character name in alphabet>',
     execute(message, args) {
         return findCharacter(message, args);
     }
