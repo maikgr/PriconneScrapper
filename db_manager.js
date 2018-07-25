@@ -20,7 +20,11 @@ db.on('error', console.error.bind(console, 'connection error:'));
 module.exports = {
     addChar: addChar,
     getChar: getChar,
-    getAllChar: getAllChar
+    getAllChar: getAllChar,
+    updateAlias: updateAlias,
+    updateImageUrl: updateImageUrl,
+    updateOverview: updateOverview,
+    updateStatus: updateStatus
 }
 
 function addChar(char) {
@@ -43,9 +47,31 @@ function addChar(char) {
 }
 
 function getChar(query) {
-    return Character.find({alias: new RegExp('^' + query, 'i')}).exec();
+    return Character.findOne({ alias: new RegExp('^' + query, 'i') }).exec();
+}
+
+function getCharById(charId) {
+    return Character.findOne({ char_id: charId }).exec();
 }
 
 function getAllChar() {
     return Character.find().exec();
+}
+
+function updateAlias(char, newAlias) {
+    let aliasList = char.alias;
+    aliasList.push(newAlias);
+    return Character.findOneAndUpdate({ char_id: char.char_id }, { alias: aliasList }).exec();
+}
+
+function updateImageUrl(char, newImageUrl) {
+    return Character.findOneAndUpdate({ char_id: char.char_id }, { image: newImageUrl }).exec();
+}
+
+function updateOverview(char, newOverview) {
+    return Character.findOneAndUpdate({ char_id: char.char_id }, { overview: newOverview }).exec();
+}
+
+function updateStatus(char, newStatus) {
+    return Character.findOneAndUpdate({ char_id: char.char_id }, { status: newStatus }).exec();
 }

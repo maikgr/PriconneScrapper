@@ -4,18 +4,29 @@ const appmedia = require('../appmedia_parser');
 const sleep = require('system-sleep');
 
 const mainPageUrl = "https://appmedia.jp/priconne-redive/1058526";
+const argsMap = {
+    '-list': { execute: updateCharList, description: 'Check for new character and update the db if there\'s any.' },
+    '-alias':  { execute: updateAlias, description: 'Add a new alias to a character. Usage `-alias <character>`' },
+    '-info':  { execute: updateInfo, description: 'Update character rank from appmedia. Usage `-info <character(optional)>`' }
+}
+
 module.exports = {
     name: 'update',
-    description: 'Check appmedia for new character and update database.',
-    args: false,
+    description: 'Update the database. Type `.update -help` to check list of command options',
+    args: true,
+    usage: '<option> [<value>]',
     cooldown: 300,
-    globalCooldown: true,    
+    ownerOnly: true,
+    globalCooldown: true,
     execute(message, args) {
-        return updateDb(message);
+        let option = args[0];
+        if(argsMap.hasOwnProperty(option)) {
+            return argsMap[option].execute(message, args);
+        }
     }
 };
 
-function updateDb(message) {
+function updateCharList(message, args) {
     Promise.all([
         message.channel.send("Checking for update..."),
         request(mainPageUrl),
@@ -45,6 +56,62 @@ function updateDb(message) {
             console.error(error);
             throw error;
         });
+}
+
+async function updateAlias(message, args) {
+    let charToUpdate = args[1];
+    let newAlias = args[2];
+    let char = await db.getChar(charToUpdate);
+    if (!char) return message.channel.send('Character not found.');
+    await db.updateAlias(char, newAlias)
+    return message.channel.send(`${char.alias[0]} updated.`);
+}
+
+async function updateInfo(message, args) {
+    if (args[1]) {
+        let char = await db.getChar(args[1]);
+        if (!char) return message.channel.send('Character not found.');
+        return await updateCharInfo(message, char);
+    } else {
+        return await updateAllCharInfo(message);
+    }
+}
+
+async function updateAllCharInfo(message) {
+    let chars = await db.getAllChar();
+    if(chars.length === 0) return message.channel.send('Character list is empty.');
+    message.channel.send(`Checking ${chars.length} characters for update...`);
+
+    let i = 0;
+    for (i; i < chars.length; ++i) {
+        await updateCharInfo(message, chars[i]);
+        sleep(getRandomTime(10, 20));
+    }    
+    return message.channel.send(`Finished update.`);
+}
+
+async function updateCharInfo(message, char) {
+    let html = await request(char.details);
+    let parsedChar = await appmedia.charDetails(char, html);
+    let updatedInfos = [];
+
+    if(char.image != parsedChar.image) {
+        await db.updateImageUrl(char, parsedChar.image);
+        updatedInfos.push('image');
+    }
+    if(char.overview != parsedChar.overview) {
+        await db.updateOverview(char, parsedChar.overview);
+        updatedInfos.push('overview');
+    }
+    if(char.status != parsedChar.status) {
+        await db.updateStatus(char, parsedChar.status);
+        updatedInfos.push('status');
+    }
+
+    if(updatedInfos.length === 0) {
+        return message.channel.send(`Nothing to update for ${char.alias[0]}`);
+    }
+    return message.channel.send(`Updated ${updatedInfos.join(', ')} for ${char.alias[0]}`)
 }
 
 function addNewChars(charList) {
