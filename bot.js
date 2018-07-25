@@ -46,7 +46,7 @@ client.on('message', (msg) => {
     const now = Date.now();
     const timestamps = cooldowns.get(command.name);
     const cooldownAmount = (command.cooldown || 3) * 1000;
-    const cooldownKey = command.globalCooldown ? "global" : msg.author.id;
+    const cooldownKey = command.globalCooldown ? command.name : msg.author.id;
     
     if (!timestamps.has(cooldownKey)) {
         timestamps.set(cooldownKey, now);
