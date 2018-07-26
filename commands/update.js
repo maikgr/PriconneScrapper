@@ -15,7 +15,7 @@ module.exports = {
     description: 'Update the database. Type `.update -help` to check list of command options',
     args: true,
     usage: '<option> [<value>]',
-    cooldown: 300,
+    cooldown: 5,
     ownerOnly: true,
     globalCooldown: true,
     execute(message, args) {
