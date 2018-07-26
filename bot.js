@@ -15,8 +15,10 @@ for (const file of commandFiles) {
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('Reppi', { type: "WATCHING" });
+    client.user.setActivity('you', { type: "WATCHING" });
 });
+
+client.on('error', (err) => console.error(err));
 
 client.on('message', (msg) => {
     if (!msg.content.startsWith(prefix)
