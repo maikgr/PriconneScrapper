@@ -9,7 +9,8 @@ let charactersSchema = new Schema({
     image: String,
     overview: {},
     status: {},
-    skills: [{}]
+    skills: [{}],
+    skills_en: [{}]
 });
 
 let Character = mongoose.model('Character', charactersSchema);
