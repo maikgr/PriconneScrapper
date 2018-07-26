@@ -32,7 +32,7 @@ client.on('message', (msg) => {
     if (!command) return;
 
     if (command.ownerOnly && msg.author.id !== process.env.OWNER_ID) {
-        return msg.reply(`Sorry, you don't have permission to use this command.`);
+        return msg.reply(`you don't have permission to use this command.`);
     }
 
     if (command.args && !args.length) {
