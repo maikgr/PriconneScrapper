@@ -91,19 +91,28 @@ async function updateAllCharInfo(message) {
 }
 
 async function updateCharInfo(message, char) {
-    let html = await request(char.details);
+    let html = await request(`https://appmedia.jp/priconne-redive/${char.char_id}`);
     let parsedChar = await appmedia.charDetails(char, html);
     let updatedInfos = [];
 
-    if(char.image != parsedChar.image) {
+    if(char.image !== parsedChar.image) {
         await db.updateImageUrl(char, parsedChar.image);
         updatedInfos.push('image');
     }
-    if(char.overview != parsedChar.overview) {
+    if(char.overview.questRank !== parsedChar.overview.questRank
+        || char.overview.arenaRank !== parsedChar.overview.arenaRank) {
+        console.log(char.overview);
+        console.log(parsedChar.overview);
         await db.updateOverview(char, parsedChar.overview);
-        updatedInfos.push('overview');
+        updatedInfos.push('rank');
     }
-    if(char.status != parsedChar.status) {
+    if(char.status.hp !== parsedChar.status.hp
+        || char.status.patk !== parsedChar.status.patk
+        || char.status.matk !== parsedChar.status.matk
+        || char.status.pdef !== parsedChar.status.pdef
+        || char.status.mdef !== parsedChar.status.mdef) {
+        console.log(char.status);
+        console.log(parsedChar.status);
         await db.updateStatus(char, parsedChar.status);
         updatedInfos.push('status');
     }
