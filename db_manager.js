@@ -7,6 +7,7 @@ let charactersSchema = new Schema({
     name: String,
     alias: [String],
     image: String,
+    image_mirror: String,
     overview: {},
     status: {},
     skills: [{}],
@@ -25,7 +26,8 @@ module.exports = {
     updateAlias: updateAlias,
     updateImageUrl: updateImageUrl,
     updateOverview: updateOverview,
-    updateStatus: updateStatus
+    updateStatus: updateStatus,
+    updateMirrorUrl: updateMirrorUrl
 }
 
 function addChar(char) {
@@ -75,4 +77,8 @@ function updateOverview(char, newOverview) {
 
 function updateStatus(char, newStatus) {
     return Character.findOneAndUpdate({ char_id: char.char_id }, { status: newStatus }).exec();
+}
+
+function updateMirrorUrl(char, newMirrorUrl) {
+    return Character.findOneAndUpdate({ char_id: char.char_id}, { image_mirror: newMirrorUrl}).exec();
 }
