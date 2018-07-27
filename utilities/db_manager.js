@@ -2,7 +2,19 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const db = mongoose.connection;
 
-let charactersSchema = new Schema({
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+db.on('error', console.error.bind(console, 'connection error:'));
+db.on('connected', () => console.log('connected to database.'));
+db.on('disconnected', () => console.log('disconnected from database.'));
+
+process.on('SIGINT', () => {
+    mongoose.connection.close(function () {
+        console.log('Mongoose default connection disconnected through app termination');
+        process.exit(0);
+    });
+});
+
+const charactersSchema = new Schema({
     char_id: String,
     name: String,
     alias: [String],
@@ -14,10 +26,7 @@ let charactersSchema = new Schema({
     skills_en: [{}]
 });
 
-let Character = mongoose.model('Character', charactersSchema);
-
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
-db.on('error', console.error.bind(console, 'connection error:'));
+const Character = mongoose.model('Character', charactersSchema);
 
 module.exports = {
     addChar: addChar,
@@ -80,5 +89,5 @@ function updateStatus(char, newStatus) {
 }
 
 function updateMirrorUrl(char, newMirrorUrl) {
-    return Character.findOneAndUpdate({ char_id: char.char_id}, { image_mirror: newMirrorUrl}).exec();
+    return Character.findOneAndUpdate({ char_id: char.char_id }, { image_mirror: newMirrorUrl }).exec();
 }
