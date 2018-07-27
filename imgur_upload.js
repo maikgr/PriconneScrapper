@@ -3,7 +3,7 @@ const db = require('./db_manager');
 
 imgur.setClientId(process.env.IMGUR_ID);
 imgur.setAPIUrl('https://api.imgur.com/3/');
-imgur.setCredentials('fishthezombie', 'World.Execute(1mgur);', process.env.IMGUR_ID);
+imgur.setCredentials(process.env.IMGUR_USERNAME, process.env.IMGUR_PASSWORD, process.env.IMGUR_ID);
 
 const albumId = 'HhE85PG';
 
