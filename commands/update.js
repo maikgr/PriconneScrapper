@@ -1,7 +1,9 @@
-const db = require('../db_manager');
 const request = require('request-promise-native');
-const appmedia = require('../appmedia_parser');
 const sleep = require('system-sleep');
+
+const db = require('../utilities/db_manager');
+const appmedia = require('../utilities/appmedia_parser');
+
 
 const mainPageUrl = "https://appmedia.jp/priconne-redive/1058526";
 const argsMap = {
