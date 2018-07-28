@@ -1,7 +1,7 @@
 const request = require('request-promise-native');
 const sleep = require('system-sleep');
 
-const db = require('../utilities/db_manager');
+const db = require('../utilities/db_characters');
 const appmedia = require('../utilities/appmedia_parser');
 
 

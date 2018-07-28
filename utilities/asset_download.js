@@ -2,7 +2,7 @@ const fs = require('fs');
 const request = require('request-promise-native');
 const sleep = require('system-sleep');
 
-const db = require('./db_manager');
+const db = require('./db_characters');
 const directory = './assets/characters/';
 
 db.getAllChar()

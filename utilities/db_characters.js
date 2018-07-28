@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 const db = mongoose.connection;
 
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
-db.on('error', console.error.bind(console, 'connection error:'));
-db.on('connected', () => console.log('connected to database.'));
-db.on('disconnected', () => console.log('disconnected from database.'));
+db.on('error', console.error.bind(console, 'character db connection error:'));
+db.on('connected', () => console.log('connected to character database.'));
+db.on('disconnected', () => console.log('disconnected from character database.'));
 
 process.on('SIGINT', () => {
     mongoose.connection.close(function () {
@@ -26,7 +26,7 @@ const charactersSchema = new Schema({
     skills_en: [{}]
 });
 
-const Character = mongoose.model('Character', charactersSchema);
+const Character = mongoose.model('characters', charactersSchema);
 
 module.exports = {
     addChar: addChar,
@@ -36,7 +36,8 @@ module.exports = {
     updateImageUrl: updateImageUrl,
     updateOverview: updateOverview,
     updateStatus: updateStatus,
-    updateMirrorUrl: updateMirrorUrl
+    updateMirrorUrl: updateMirrorUrl,
+    getGachaInfo: getGachaInfo
 }
 
 function addChar(char) {
@@ -54,7 +55,6 @@ function addChar(char) {
         if (err) {
             throw err;
         }
-        console.log("Saved " + char.alias[0]);
     })
 }
 

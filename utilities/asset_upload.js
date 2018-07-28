@@ -1,5 +1,5 @@
 const imgur = require('imgur-v2');
-const db = require('./db_manager');
+const db = require('./db_characters');
 
 imgur.setClientId(process.env.IMGUR_ID);
 imgur.setAPIUrl('https://api.imgur.com/3/');

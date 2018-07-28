@@ -1,4 +1,4 @@
-const db = require('../utilities/db_manager');
+const db = require('../utilities/db_characters');
 
 const appmediaUrl = "https://appmedia.jp/priconne-redive";
 module.exports = {

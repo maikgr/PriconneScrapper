@@ -3,7 +3,7 @@ const request = require('request');
 const fs = require('fs');
 const sleep = require('system-sleep');
 const appmedia = require('./appmedia_parser');
-const db = require('./db_manager');
+const db = require('./db_characters');
 const app = express();
 const mainPageUrl = 'https://appmedia.jp/priconne-redive/1058526';
 
