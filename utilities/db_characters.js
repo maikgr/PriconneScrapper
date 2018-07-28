@@ -36,8 +36,7 @@ module.exports = {
     updateImageUrl: updateImageUrl,
     updateOverview: updateOverview,
     updateStatus: updateStatus,
-    updateMirrorUrl: updateMirrorUrl,
-    getGachaInfo: getGachaInfo
+    updateMirrorUrl: updateMirrorUrl
 }
 
 function addChar(char) {
