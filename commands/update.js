@@ -14,12 +14,13 @@ const argsMap = {
 
 module.exports = {
     name: 'update',
-    description: 'Update the database. Type `.update -help` to check list of command options',
+    description: 'Update the database.',
     args: true,
-    usage: '<option> [<value>]',
+    usage: '[option?] [value?]',
     cooldown: 5,
     ownerOnly: true,
     globalCooldown: true,
+    sortIndex: 6,
     execute(message, args) {
         let option = args[0];
         if(argsMap.hasOwnProperty(option)) {

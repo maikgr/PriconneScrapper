@@ -9,7 +9,8 @@ module.exports = {
     ownerOnly: false,
     cooldown: 3,
     globalCooldown: false,
-    usage: '<character name in alphabet>',
+    sortIndex: 3,
+    usage: '[character name]',
     execute(message, args) {
         return findCharacter(message, args);
     }
