@@ -5,7 +5,7 @@ const client = new Discord.Client();
 const cooldowns = new Discord.Collection();
 client.commands = new Discord.Collection();
 
-const prefix = ".";
+const prefix = process.env.DEFAULT_PREFIX;
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
@@ -15,7 +15,7 @@ for (const file of commandFiles) {
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('you', { type: "WATCHING" });
+    client.user.setActivity('.help', { type: "WATCHING" });
 });
 
 client.on('error', (err) => console.error(err));
