@@ -9,7 +9,7 @@ module.exports = {
     globalCooldown: false,
     args: false,
     ownerOnly: false,
-    sortIndex: 7,
+    sortIndex: 9,
     execute(message, args) {
         showAllCommands(message);
     },
