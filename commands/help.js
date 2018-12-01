@@ -9,24 +9,23 @@ module.exports = {
     globalCooldown: false,
     args: false,
     ownerOnly: false,
-    sortIndex: 4,
-    execute(message, args) {
-        showAllCommands(message);
-    }
+    sortIndex: 4
 };
 
-function showAllCommands(message) {
+module.exports.execute = function (message, args) {
     const commands = message.client.commands;
     let commandFields = [];
 
     let i = 0;
     for (i; i < commands.size; ++i) {
         let command = commands.find(cmd => cmd.sortIndex === i);
-        let aliases = command.aliases.length > 0 ? '(' + prefix + command.aliases.join(`, ${prefix}`) + ')' : null;
-        commandFields.push({
-            "name": `${prefix}${command.name} ${command.args ? command.usage : ''} ${aliases ? aliases : ''}`,
-            "value": command.description
-        });
+        if (command) {
+            let aliases = command.aliases.length > 0 ? '(' + prefix + command.aliases.join(`, ${prefix}`) + ')' : null;
+            commandFields.push({
+                "name": `${prefix}${command.name} ${command.args ? command.usage : ''} ${aliases ? aliases : ''}`,
+                "value": command.description
+            });
+        }
     }
 
     return message.channel.send({
