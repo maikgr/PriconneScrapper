@@ -15,7 +15,7 @@ module.exports = {
     cooldown: 3,
     globalCooldown: false,
     usage: '',
-    sortIndex: 4,
+    sortIndex: 2,
     execute(message, args) {
         return startGacha(message);
     }
