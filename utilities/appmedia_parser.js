@@ -28,8 +28,12 @@ function parseCharlistPage(html) {
         if ($(list[i]).find('a').length > 0) {
             let value = list[i];
             let link = $(value).find('a').attr('href');
-            let img = $(value).find('img').attr('src');
             let name = $(value).text();
+            let img = $(value).find('img').attr('src');
+
+            if (!img.startsWith('http')) {
+                img = `https://appmedia.jp${img}`;
+            }
             charList.push({
                 'char_id': link.replace('https://appmedia.jp/priconne-redive/', ''),
                 'name': name,

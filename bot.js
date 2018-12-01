@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const fs = require('fs');
+const db = require('./utilities/db_characters');
 
 const client = new Discord.Client();
-const cooldowns = new Discord.Collection();
 client.commands = new Discord.Collection();
 
 const prefix = process.env.DEFAULT_PREFIX;
@@ -16,6 +16,7 @@ for (const file of commandFiles) {
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setActivity('.help', { type: "WATCHING" });
+    db.initialize();
 });
 
 client.on('error', (err) => console.error(err));
@@ -43,31 +44,6 @@ client.on('message', (msg) => {
         }
 
         return msg.reply(reply);
-    }
-
-    if (!cooldowns.has(command.name)) {
-        cooldowns.set(command.name, new Discord.Collection());
-    }
-    
-    const now = Date.now();
-    const timestamps = cooldowns.get(command.name);
-    const cooldownAmount = (command.cooldown || 3) * 1000;
-    const cooldownKey = command.globalCooldown ? command.name : msg.author.id;
-    
-    if (!timestamps.has(cooldownKey)) {
-        timestamps.set(cooldownKey, now);
-        setTimeout(() => timestamps.delete(cooldownKey), cooldownAmount);
-    }
-    else {
-        const expirationTime = timestamps.get(cooldownKey) + cooldownAmount;
-
-        if (now < expirationTime) {
-            const timeLeft = (expirationTime - now) / 1000;
-            return msg.reply(`please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`);
-        }
-
-        timestamps.set(cooldownKey, now);
-        setTimeout(() => timestamps.delete(cooldownKey), cooldownAmount);
     }
 
     try {

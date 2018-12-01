@@ -6,13 +6,13 @@ const appmedia = require('../utilities/appmedia_parser');
 
 module.exports = {
     name: 'update-info',
+    aliases: [],
     description: 'Update all characters/specific character info from appmedia.',
-    args: true,
+    args: false,
     usage: '[character?]',
-    cooldown: 5,
     ownerOnly: true,
     globalCooldown: true,
-    sortIndex: 7,
+    sortIndex: 2,
     execute(message, args) {
         updateInfo(message, args);
     }

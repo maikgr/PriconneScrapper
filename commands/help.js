@@ -9,10 +9,10 @@ module.exports = {
     globalCooldown: false,
     args: false,
     ownerOnly: false,
-    sortIndex: 9,
+    sortIndex: 4,
     execute(message, args) {
         showAllCommands(message);
-    },
+    }
 };
 
 function showAllCommands(message) {
@@ -22,7 +22,7 @@ function showAllCommands(message) {
     let i = 0;
     for (i; i < commands.size; ++i) {
         let command = commands.find(cmd => cmd.sortIndex === i);
-        let aliases = command.aliases ? '(' + prefix + command.aliases.join(`, ${prefix}`) + ')' : null;
+        let aliases = command.aliases.length > 0 ? '(' + prefix + command.aliases.join(`, ${prefix}`) + ')' : null;
         commandFields.push({
             "name": `${prefix}${command.name} ${command.args ? command.usage : ''} ${aliases ? aliases : ''}`,
             "value": command.description
